@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -52,6 +52,11 @@ html, body {
 
 .ba-menu-item {
     margin-left: 30px;
+    transition: transform .4s;
+}
+
+.ba-menu-item:hover{
+    transform: scale(1.2);
 }
 
 .ba-hero {
@@ -82,7 +87,6 @@ html, body {
     font-style: normal;
     text-transform: uppercase;
     font-size: 100px;
-    /* font-family: "Lato"; */
     font-weight: bold;
     line-height: 0.3;
     letter-spacing: .05em;
@@ -94,7 +98,6 @@ html, body {
 .ba-btn {
     font-size: 18px;
     font-weight: bold;
-    /* line-height: 1.177; */
     letter-spacing: .025em;
     height: 68px;
     line-height: 64px;
@@ -212,13 +215,17 @@ html, body {
     text-align: center;
 }
 
+.ba-feedback img{
+    margin-bottom: 25px;
+}
+
 .ba-feedback__desc {
     font-size: 30px;
     font-weight: 100;
-    line-height: 1.2;
+    line-height: 1.25;
     opacity: 0.75;
     max-width: 890px;
-    margin: 0.5em auto;
+    margin: 0 auto;
 }
 
 .ba-feedback__title {
@@ -227,6 +234,8 @@ html, body {
     font-weight: 100;
     line-height: 2;
     opacity: 0.75;
+    margin: 0 auto;
+    margin-top: 5px;
 }
 
 .ba-feedback-pages {
@@ -250,26 +259,25 @@ html, body {
     height: 10px;
     opacity: .6;
     transition: .4s;
+    margin-top: 40px;
 }
 
-.ba-circle-link:hover,
-.ba-circle-link:focus,
-.ba-circle-link:active{
+.ba-circle-link:hover, .ba-circle-link:focus, .ba-circle-link:active, .selected {
     opacity: 1;
 }
 
-.ba-cuisine{
+.ba-cuisine {
     background-color: #fff;
     min-width: 100%;
     padding-top: 85px;
 }
 
-.ba-cuisine__title{
+.ba-cuisine__title {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.ba-cuisine-list{
+.ba-cuisine-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -277,14 +285,15 @@ html, body {
     width: 100%;
     background-color: #f57365;
 }
-.ba-cuisine-item{
+
+.ba-cuisine-item {
     display: inline-block;
     width: 20%;
     text-align: center;
     position: relative;
-
 }
-.ba-cuisine-item a{
+
+.ba-cuisine-item a {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -297,7 +306,8 @@ html, body {
     height: 60px;
     margin: auto;
 }
-.recipes-count{
+
+.recipes-count {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
@@ -305,9 +315,10 @@ html, body {
     opacity: 0.9;
     font-size: 15px;
     line-height: 0.8334;
-    letter-spacing: .05em;  
+    letter-spacing: .05em;
 }
-.ba-category__title{
+
+.ba-category__title {
     font-size: 36px;
     font-weight: bold;
     line-height: 0.3558;
@@ -315,36 +326,70 @@ html, body {
     margin: 0 auto;
 }
 
-.ba-counter{
+.ba-counter {
     background-color: #fff;
     color: black;
 }
 
-.ba-counter-list{
+.ba-counter-list {
     list-style: none;
     margin: 0;
     padding: 0;
     font-size: 0;
     width: 100%;
 }
-.ba-counter-item{
+
+.ba-counter-item {
     display: inline-block;
     width: 20%;
     text-align: center;
     padding: 60px 0;
 }
-.ba-count{
+
+.ba-count {
     font-size: 36px;
     font-weight: bold;
     line-height: .833;
     letter-spacing: .05em;
     margin: 0 auto;
 }
-.ba-count_desc{
+
+.ba-count_desc {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.125;
     letter-spacing: .05em;
     margin: 15px 0 0 0;
 }
-  
+
+.ba-footer {
+    background-color: #f7f7f7;
+    border-top: 1px solid #e2e2e2;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #c8c8c8;
+    margin:0;
+}
+
+.dev__info.color {
+    color: #8b8b8b;
+    font-weight: 300;
+}
+
+.dev__info{
+    font-size: 14px;
+    letter-spacing: .2em;
+    font-weight: 400;
+    margin:0;
+}
