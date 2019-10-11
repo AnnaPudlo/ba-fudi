@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 html, body {
     font-family: 'Lato', sans-serif;
 }
@@ -131,7 +135,7 @@ html, body {
     margin-left: 50px;
 }
 
-.ba-get__title, .ba-mobile__title {
+.ba-get__title, .ba-mobile__title, .ba-cuisine__title {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.666;
@@ -140,7 +144,7 @@ html, body {
     margin: 15px auto;
 }
 
-.ba-get__title::after, .ba-mobile__title::after {
+.ba-get__title::after, .ba-mobile__title::after, .ba-cuisine__title::after {
     content: "";
     display: block;
     width: 90px;
@@ -148,7 +152,7 @@ html, body {
     margin: 5px 0;
 }
 
-.ba-get__title::after {
+.ba-get__title::after, .ba-cuisine__title::after {
     margin: 5px auto;
 }
 
@@ -245,6 +249,7 @@ html, body {
     width: 10px;
     height: 10px;
     opacity: .6;
+    transition: .4s;
 }
 
 .ba-circle-link:hover,
@@ -252,3 +257,94 @@ html, body {
 .ba-circle-link:active{
     opacity: 1;
 }
+
+.ba-cuisine{
+    background-color: #fff;
+    min-width: 100%;
+    padding-top: 85px;
+}
+
+.ba-cuisine__title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ba-cuisine-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    width: 100%;
+    background-color: #f57365;
+}
+.ba-cuisine-item{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    position: relative;
+
+}
+.ba-cuisine-item a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+}
+.recipes-count{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 15px;
+    line-height: 0.8334;
+    letter-spacing: .05em;  
+}
+.ba-category__title{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 0.3558;
+    letter-spacing: .05em;
+    margin: 0 auto;
+}
+
+.ba-counter{
+    background-color: #fff;
+    color: black;
+}
+
+.ba-counter-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    width: 100%;
+}
+.ba-counter-item{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 60px 0;
+}
+.ba-count{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: .833;
+    letter-spacing: .05em;
+    margin: 0 auto;
+}
+.ba-count_desc{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.125;
+    letter-spacing: .05em;
+    margin: 15px 0 0 0;
+}
+  
