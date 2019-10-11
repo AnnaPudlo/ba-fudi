@@ -117,16 +117,138 @@ html, body {
     font-weight: bold;
 }
 
-.ba-about-wrapper{
+.ba-about-wrapper {
     display: flex;
     align-items: center;
 }
 
-.ba-get{
+.ba-get {
     padding: 100px 0;
     text-align: center;
 }
 
-.ba-get + .ba-get{
+.ba-get+.ba-get {
     margin-left: 50px;
+}
+
+.ba-get__title, .ba-mobile__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.666;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin: 15px auto;
+}
+
+.ba-get__title::after, .ba-mobile__title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    border-bottom: 1px solid #f57365;
+    margin: 5px 0;
+}
+
+.ba-get__title::after {
+    margin: 5px auto;
+}
+
+.ba-get__desc, .ba-mobile__desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: .05em;
+}
+
+.ba-mobile {
+    min-height: 100vh;
+    background-image: url(../img/iphone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    color: black;
+    padding: 180px 0 280px;
+}
+
+.shop {
+    max-width: 540px;
+    text-align: left;
+    margin-left: calc(100% - 540px);
+}
+
+.ba-mobile__desc+.ba-mobile__desc {
+    margin-top: 1.5em;
+}
+
+.shop-btns {
+    font-size: 0;
+}
+
+.shop-btn {
+    display: inline-block;
+    height: 40px;
+    margin: 5px 10px 0 0;
+    text-decoration: none;
+}
+
+.shop-btn img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.ba-feedback {
+    min-height: 460px;
+    background-image: url(../img/feedback-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4a3949;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.ba-feedback__desc {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.2;
+    opacity: 0.75;
+    max-width: 890px;
+    margin: 0.5em auto;
+}
+
+.ba-feedback__title {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 2;
+    opacity: 0.75;
+}
+
+.ba-feedback-pages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.ba-fb-item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.ba-circle-link {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    opacity: .6;
+}
+
+.ba-circle-link:hover,
+.ba-circle-link:focus,
+.ba-circle-link:active{
+    opacity: 1;
 }
